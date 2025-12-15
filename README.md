@@ -248,7 +248,7 @@ pytest
 
 For issues and questions:
 - Open an issue on GitHub
-- Email: your-email@example.com
+- Email: meghanigorav@example.com
 
 ---
 
