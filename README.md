@@ -1,4 +1,3 @@
-```markdown
 # Genie Backend - AI Coding Assistant API
 
 FastAPI-powered backend for an intelligent coding assistant with GitHub automation, AWS deployments, and AI-driven project generation.
@@ -44,7 +43,6 @@ FastAPI-powered backend for an intelligent coding assistant with GitHub automati
 
 ### 1. Clone and Setup
 
-```bash
 # Clone the repository
 git clone https://github.com/yourusername/genie-backend.git
 cd genie-backend
@@ -60,19 +58,15 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-```
 
 ### 2. Configure Environment
 
 Copy .env.example to .env and configure your credentials:
 
-```bash
 cp .env.example .env
-```
 
 Required environment variables:
 
-```env
 # AWS
 AWS_ACCESS_KEY_ID=your_aws_access_key
 AWS_SECRET_ACCESS_KEY=your_aws_secret_key
@@ -98,13 +92,10 @@ GROQ_CHAT_MODEL=qwen/qwen3-32b
 GROQ_TOOL_MODEL=qwen/qwen3-32b
 MODEL_SUMMARIZER=openai/gpt-oss-20b
 MODEL_DOCGEN=openai/gpt-oss-120b
-```
 
 ### 3. Run the Server
 
-```bash
 uvicorn api:app --reload --host 0.0.0.0 --port 8000
-```
 
 The API will be available at `http://localhost:8000`
 
@@ -112,7 +103,6 @@ API documentation: `http://localhost:8000/docs`
 
 ## 📁 Project Structure
 
-```
 Backend/
 ├── api.py                 # Main FastAPI application and routes
 ├── agent.py              # LangGraph agent configuration
@@ -131,7 +121,6 @@ Backend/
 │   ├── main.tf          # Terraform AWS configuration
 │   └── variables.tf     # Terraform variables
 └── .env.example         # Environment template
-```
 
 ## 🔌 API Endpoints
 
@@ -195,19 +184,13 @@ The application uses Supabase PostgreSQL with:
 ## 🧪 Development
 
 ### Run with auto-reload:
-```bash
 uvicorn api:app --reload
-```
 
 ### Test Stripe webhooks locally:
-```bash
 stripe listen --forward-to localhost:8000/billing/webhook
-```
 
 ### Run tests:
-```bash
 pytest
-```
 
 ## 📦 Deployment
 
@@ -221,10 +204,8 @@ pytest
 - [ ] Rotate all API keys
 
 ### Deploy to cloud:
-```bash
 # AWS, Google Cloud, or Azure
 # Use your preferred deployment method
-```
 
 ## 🤝 Contributing
 
@@ -253,4 +234,3 @@ For issues and questions:
 ---
 
 Built with ❤️ using FastAPI and LangGraph
-```
