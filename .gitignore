@@ -1,0 +1,29 @@
+# Environment variables - be explicit
+.env
+*.env
+.env.*
+!.env.example
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+ENV/
+
+# Terraform
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Uploaded projects
+uploaded_projects/
+
+# Thread data
+thread_titles.json
